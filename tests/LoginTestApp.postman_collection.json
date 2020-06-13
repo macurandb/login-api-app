@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "LoginTestApp",
+		"_postman_id": "7e790348-aa3c-4e67-429c-3b0dc4070669",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/v1/user_info",
+			"request": {
+				"url": "http://localhost:8000/api/v1/user_info",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/signin",
+			"request": {
+				"url": "http://localhost:8000/api/v1/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"macurandb@gmail.com\",\n  \t\"password\":\"Macuran495506\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/register",
+			"request": {
+				"url": "http://localhost:8000/api/v1/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"first_name\": \"Sol1\",\n    \"last_name\":  \"Battet1\",\n    \"email\": \"solagel1@gmail.com\",\n  \t\"username\": \"sol1\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
