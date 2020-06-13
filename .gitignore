@@ -142,7 +142,6 @@ dmypy.json
 ### VirtualEnv template
 # Virtualenv
 # http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
-.Python
 [Bb]in
 [Ii]nclude
 [Ll]ib
@@ -150,13 +149,11 @@ dmypy.json
 [Ll]ocal
 [Ss]cripts
 pyvenv.cfg
-.venv
 pip-selfcheck.json
 
 ### Node template
 # Logs
 logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -219,12 +216,7 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
 .env.test
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-
 # next.js build output
 .next
 

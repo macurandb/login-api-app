@@ -9,13 +9,12 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = Path(__file__).ancestor(3)
 
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '7lye)1xmev*@^6t#)*0p63c3p6t$ag%-@@ps+7$!dk&gsye9ng'
 
 # Application definition
 # DJANGO APPS
-#------------
+# ------------
 DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -24,7 +23,6 @@ DJANGO_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-
 
 # THIRD APPS
 # -----------
@@ -73,7 +71,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -91,7 +88,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -117,10 +113,6 @@ REST_FRAMEWORK = {
     ],
     'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
-
-
-
-
 
 REST_AUTH_SERIALIZERS = {
     'USER_DETAILS_SERIALIZER': 'apps.security.serializers.UserSerializer',

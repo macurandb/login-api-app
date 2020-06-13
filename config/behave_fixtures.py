@@ -1,14 +1,15 @@
 from behave import fixture
-import django
 from django.contrib.auth import get_user_model
 from django.test.runner import DiscoverRunner
 from rest_framework.test import APITestCase, APIClient
 
 UserModel = get_user_model()
 
+
 @fixture
 def django_test_runner(context):
     context.test_runner = DiscoverRunner()
+
 
 @fixture
 def django_test_case(context):
